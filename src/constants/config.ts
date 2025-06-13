@@ -35,6 +35,7 @@ type TConfig = {
     experience: TSection;
     feedbacks: TSection;
     works: Required<TSection>;
+    
   };
 };
 

@@ -52,6 +52,19 @@ export const navLinks: TNavLink[] = [
     id: "contact",
     title: "Contact",
   },
+  {
+    id: "resume",
+    title: "Resume",
+    external: true,
+    url: "/abhishekShahResumeMay.pdf",
+  },
+    {
+    id: "linkedin",
+    title: "LinkedIn",
+    external: true,
+    url: "https://www.linkedin.com/in/isabhishekshah/",
+  },
+  
 ];
 
 const services: TService[] = [
