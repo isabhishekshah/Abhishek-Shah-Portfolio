@@ -122,7 +122,7 @@ const OrbitRing: React.FC<OrbitRingProps> = ({ radius, tiltX, tiltY, color }) =>
 interface AtomProps { isMobile: boolean }
 const Atom: React.FC<AtomProps> = ({ isMobile }) => {
   const textures = useLoader(TextureLoader, TECHNOLOGIES.map((t) => logoMap[t]));
-  const texMap = useMemo(() => TECHNOLOGIES.reduce((acc, t, i) => { acc[t] = textures[i]; return acc; }, {} as Record<string, THREE.Pattern>), [textures]);
+  const texMap = useMemo(() => TECHNOLOGIES.reduce((acc, t, i) => { acc[t] = textures[i]; return acc; }, {} as Record<string, THREE.Texture>), [textures]);
 
   // generate binary pattern texture in organized grid
   const binaryTexture = useMemo(() => {
