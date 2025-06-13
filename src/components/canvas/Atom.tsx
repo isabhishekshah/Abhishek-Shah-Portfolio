@@ -157,7 +157,11 @@ const Atom: React.FC<AtomProps> = ({ isMobile }) => {
   }, []);
 
   const orbitRef = useRef<THREE.Group>(null!);
-  useFrame(({ clock }) => { orbitRef.current.rotation.y = clock.elapsedTime * 0.1; });
+  const nucleusRef = useRef<THREE.Mesh>(null!);
+useFrame(({ clock }) => {
+  orbitRef.current.rotation.y = clock.elapsedTime * 0.1;
+  nucleusRef.current.rotation.y = clock.elapsedTime * 0.05;
+});
 
   const NUCLEUS_RADIUS = 0.5;
   const MIN_ORBIT = NUCLEUS_RADIUS * 1.8;
@@ -171,16 +175,17 @@ const Atom: React.FC<AtomProps> = ({ isMobile }) => {
       <directionalLight position={[5, 5, 5]} intensity={0.8} />
 
       {/* Nucleus with binary pattern overlay */}
-      <mesh>
-        <sphereGeometry args={[NUCLEUS_RADIUS, 32, 32]} />
-        <meshStandardMaterial
-          map={binaryTexture}
-          emissiveMap={binaryTexture}
-          emissiveIntensity={0.5}
-          roughness={0.9}
-          metalness={0.2}
-        />
-      </mesh>
+<mesh ref={nucleusRef}>
+  <sphereGeometry args={[NUCLEUS_RADIUS, 32, 32]} />
+  <meshStandardMaterial
+    map={binaryTexture}
+    emissiveMap={binaryTexture}
+    emissiveIntensity={0.5}
+    roughness={0.9}
+    metalness={0.2}
+  />
+</mesh>
+
 
       {/* Orbits & Electrons */}
       <group ref={orbitRef}>

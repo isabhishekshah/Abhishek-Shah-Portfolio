@@ -150,10 +150,10 @@ const experiences: TExperience[] = [
     date: "May 2023 - Present",
     points: [
       "Project & Team Leadership: Managed a team of 4 overseas developers to achieve 95% on-time sprint delivery across 10+ projects; implemented Agile practices, boosting productivity by 30% and cut scope changes by 25%.",
-      "Full-Stack Web & E-commerce Development: Built responsive UIs (HTML5, CSS3, JavaScript, jQuery) and scalable backends (PHP/CodeIgniter) handling 1 M+ monthly requests; streamlined BigCommerce API integration for 35 % faster data sync and optimized MySQL schemas/queries to reduce execution time by 20 %.",
-      "SEO & Performance Optimization: Applied structured-data and PHP-driven SEO improvements to lift organic traffic by 45 % and achieve a 90+ PageSpeed score, reducing bounce rates by 30 %.",
-      "Data Analytics & Cloud Automation: Developed Tableau dashboards for real-time insights (50 % faster reporting) and automated AWS deployments (EC2, Lambda, API Gateway) to cut release time by 40 %.",
-      "Conversational AI & Shipping-Rate Automation: Deployed a Rasa-based chatbot with Python backend and BigCommerce webhooks—deflecting 60 % of support tickets and reducing response times from 4 hrs to under 5 min—and built a LightGBM model (Pandas, Airflow) to predict shipping rates (+25 % accuracy), currently containerizing it in FastAPI on AWS for real-time quotes.",
+      "Full-Stack Web & E-commerce Development: Built responsive UIs (HTML5, CSS3, JavaScript, jQuery) and scalable backends (PHP/CodeIgniter) handling 1 M+ monthly requests; streamlined BigCommerce API integration for 35% faster data sync and optimized MySQL schemas/queries to reduce execution time by 20%.",
+      "SEO & Performance Optimization: Applied structured-data and PHP-driven SEO improvements to lift organic traffic by 45% and achieve a 90+ PageSpeed score, reducing bounce rates by 30%.",
+      "Data Analytics & Cloud Automation: Developed Tableau dashboards for real-time insights (50% faster reporting) and automated AWS deployments (EC2, Lambda, API Gateway) to cut release time by 40%.",
+      "Conversational AI & Shipping-Rate Automation: Deployed a Rasa-based chatbot with Python backend and BigCommerce webhooks—deflecting 60% of support tickets and reducing response times from 4 hrs to under 5 min—and built a LightGBM model (Pandas, Airflow) to predict shipping rates (+25% accuracy), currently containerizing it in FastAPI on AWS for real-time quotes.",
     ],
   },
   {
