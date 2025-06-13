@@ -1,7 +1,7 @@
 import React, { Suspense, useEffect, useState, useRef, useMemo } from "react";
 import { Canvas, useFrame, useLoader } from "@react-three/fiber";
 import { OrbitControls, Html, useProgress, Preload } from "@react-three/drei";
-import { TextureLoader } from "three/src/loaders/TextureLoader";
+import { TextureLoader } from 'three';
 import * as THREE from "three";
 
 // --- Static Imports & Constants ---
